@@ -1,0 +1,17 @@
+# files
+**/.DS_Store
+**/README.md
+**/.gitignore
+
+# file types
+**/*.log
+
+# directories
+**/__pycache__
+**/*.egg-info
+.mypy_cache
+doc
+test
+venv
+.github
+.git

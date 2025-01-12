@@ -1,0 +1,54 @@
+---
+name: Code Quality
+
+on:    # yamllint disable-line rule:truthy
+    push:
+        branches: [master]
+    pull_request:
+        branches: [master]
+
+jobs:
+    lint:
+        runs-on: ubuntu-22.04
+        steps:
+            - uses: actions/checkout@v4
+            - name: Setup Python
+              uses: actions/setup-python@v5
+              with:
+                  python-version: '3.11'
+            - name: Install flake8
+              run: |
+                  python -m pip install --upgrade pip==24.0
+                  python -m pip install .[lint]
+            - name: Setup and run black
+              uses: psf/black@stable
+              with:
+                  options: --check --diff --verbose
+                  src: ./src/thorlabs_cube
+            - name: Setup and run isort
+              uses: isort/isort-action@master
+              with:
+                  isortVersion: 5.13.2
+                  sortPaths: ./src/thorlabs_cube
+                  configuration: --check --diff --profile black --filter-files
+            - name: Setup and run flake8
+              run: |
+                  flake8 ./src/thorlabs_cube
+            - name: yamllint
+              uses: karancode/yamllint-github-action@v2.1.1
+
+    check-types:
+        runs-on: ubuntu-22.04
+        steps:
+            - uses: actions/checkout@v4
+            - name: Setup Python
+              uses: actions/setup-python@v5
+              with:
+                  python-version: '3.11'
+            - name: Install mypy and requirements
+              run: |
+                  python -m pip install --upgrade pip==24.0
+                  python -m pip install .[types]
+            - name: Run mypy
+              run: |
+                  mypy ./src/thorlabs_cube --ignore-missing-imports

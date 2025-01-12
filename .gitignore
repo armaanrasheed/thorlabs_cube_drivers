@@ -1,0 +1,11 @@
+# files
+**/.DS_Store
+
+# file types
+
+# directories
+**/__pycache__/
+doc/_build/
+**/**.egg-info/
+venv/
+build/

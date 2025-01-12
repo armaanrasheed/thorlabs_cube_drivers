@@ -1,0 +1,41 @@
+---
+site_name: Thorlabs Repository Documentation
+
+theme:
+    name: material
+    features:
+        - navigation.tabs
+        - navigation.indexes
+        - navigation.expand
+        - content.code.copy
+        - toc.integrate
+        - content.tabs.link
+
+plugins:
+    - search
+    - mkdocstrings:
+          handlers:
+              python:
+                  options:
+                      show_source: true
+                      show_root_full_path: false
+
+nav:
+    - Home: index.md
+    - Installation: sections/installation.md
+    - Thorlab Cubes:
+          - Overview: sections/cube/cube.md
+          - K-Cube:
+                - KDC101: sections/cube/kcube/kdc101.md
+                - KPA101: sections/cube/kcube/kpa101.md
+                - KPZ101: sections/cube/kcube/kpz101.md
+                - KSC101: sections/cube/kcube/ksc101.md
+          - T-Cube:
+                - TDC001: sections/cube/tcube/tdc001.md
+                - TPA101: sections/cube/tcube/tpa101.md
+                - TPZ001: sections/cube/tcube/tpz001.md
+                - TSC001: sections/cube/tcube/tsc001.md
+    - Tutorials:
+          - Tutorials: sections/tutorial/tutorials.md
+          - SiPyCo RPC Control: sections/tutorial/examples/sipyco.md
+          - ARTIQ Control: sections/tutorial/examples/artiq.md

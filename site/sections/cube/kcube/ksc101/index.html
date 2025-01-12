@@ -1,0 +1,2023 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+
+
+        <link rel="prev" href="../kpz101/">
+
+
+        <link rel="next" href="../../tcube/tdc001/">
+
+
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+
+
+
+        <title>KSC101 - Thorlabs Repository Documentation</title>
+
+
+
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6f8fc17f.min.css">
+
+
+
+
+
+
+
+
+
+
+
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+
+
+
+      <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css">
+
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+
+
+
+
+
+
+  </head>
+
+
+    <body dir="ltr">
+
+
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+
+
+        <a href="#ksc101" class="md-skip">
+          Skip to content
+        </a>
+
+    </div>
+    <div data-md-component="announce">
+
+    </div>
+
+
+
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Thorlabs Repository Documentation" class="md-header__button md-logo" aria-label="Thorlabs Repository Documentation" data-md-component="logo">
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Thorlabs Repository Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+
+              KSC101
+
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+
+
+
+      <label class="md-header__button md-icon" for="__search">
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </nav>
+
+</header>
+
+    <div class="md-container" data-md-component="container">
+
+
+
+
+
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+
+
+
+
+  Home
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href="../../../installation/" class="md-tabs__link">
+
+
+
+
+  Installation
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../cube/" class="md-tabs__link">
+
+
+
+
+  Thorlab Cubes
+
+        </a>
+      </li>
+
+
+
+
+
+
+
+
+
+
+      <li class="md-tabs__item">
+        <a href="../../../tutorial/tutorials/" class="md-tabs__link">
+
+
+
+
+  Tutorials
+
+        </a>
+      </li>
+
+
+
+
+    </ul>
+  </div>
+</nav>
+
+
+
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+
+
+
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+
+
+
+
+
+
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Thorlabs Repository Documentation" class="md-nav__button md-logo" aria-label="Thorlabs Repository Documentation" data-md-component="logo">
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Thorlabs Repository Documentation
+  </label>
+
+  <ul class="md-nav__list" data-md-scrollfix>
+
+
+
+
+
+
+
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+
+
+    <li class="md-nav__item">
+      <a href="../../../installation/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    Installation
+  </span>
+
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+
+
+
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+
+
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+
+
+  <span class="md-ellipsis">
+    Thorlab Cubes
+  </span>
+
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Thorlab Cubes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+
+
+
+
+
+
+
+    <li class="md-nav__item">
+      <a href="../../cube/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    Overview
+  </span>
+
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+
+
+
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+
+
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+
+
+  <span class="md-ellipsis">
+    K-Cube
+  </span>
+
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            K-Cube
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+
+
+
+
+
+
+
+    <li class="md-nav__item">
+      <a href="../kdc101/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    KDC101
+  </span>
+
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+
+
+
+    <li class="md-nav__item">
+      <a href="../kpa101/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    KPA101
+  </span>
+
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+
+
+
+    <li class="md-nav__item">
+      <a href="../kpz101/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    KPZ101
+  </span>
+
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="md-nav__item md-nav__item--active">
+
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+
+
+
+
+
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+
+
+  <span class="md-ellipsis">
+    KSC101
+  </span>
+
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+
+      <a href="./" class="md-nav__link md-nav__link--active">
+
+
+  <span class="md-ellipsis">
+    KSC101
+  </span>
+
+
+      </a>
+
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+
+
+
+
+
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+
+        <li class="md-nav__item">
+  <a href="#controller-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controller Description
+    </span>
+  </a>
+
+</li>
+
+        <li class="md-nav__item">
+  <a href="#controller-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controller Use-Cases
+    </span>
+  </a>
+
+</li>
+
+        <li class="md-nav__item">
+  <a href="#peripherals-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Peripherals Examples
+    </span>
+  </a>
+
+</li>
+
+        <li class="md-nav__item">
+  <a href="#api-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Reference
+    </span>
+  </a>
+
+    <nav class="md-nav" aria-label="API Reference">
+      <ul class="md-nav__list">
+
+          <li class="md-nav__item">
+  <a href="#thorlabs_cube.driver.kcube.ksc.Ksc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ksc
+    </span>
+  </a>
+
+</li>
+
+          <li class="md-nav__item">
+  <a href="#thorlabs_cube.driver.kcube.ksc.Ksc.get_kcubemmi_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      get_kcubemmi_params
+    </span>
+  </a>
+
+</li>
+
+          <li class="md-nav__item">
+  <a href="#thorlabs_cube.driver.kcube.ksc.Ksc.get_kcubepostrig_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      get_kcubepostrig_params
+    </span>
+  </a>
+
+</li>
+
+          <li class="md-nav__item">
+  <a href="#thorlabs_cube.driver.kcube.ksc.Ksc.get_kcubetrigio_config" class="md-nav__link">
+    <span class="md-ellipsis">
+      get_kcubetrigio_config
+    </span>
+  </a>
+
+</li>
+
+          <li class="md-nav__item">
+  <a href="#thorlabs_cube.driver.kcube.ksc.Ksc.set_kcubemmi_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      set_kcubemmi_params
+    </span>
+  </a>
+
+</li>
+
+          <li class="md-nav__item">
+  <a href="#thorlabs_cube.driver.kcube.ksc.Ksc.set_kcubepostrig_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      set_kcubepostrig_params
+    </span>
+  </a>
+
+</li>
+
+          <li class="md-nav__item">
+  <a href="#thorlabs_cube.driver.kcube.ksc.Ksc.set_kcubetrigio_config" class="md-nav__link">
+    <span class="md-ellipsis">
+      set_kcubetrigio_config
+    </span>
+  </a>
+
+</li>
+
+      </ul>
+    </nav>
+
+</li>
+
+    </ul>
+
+</nav>
+
+    </li>
+
+
+
+
+          </ul>
+        </nav>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="md-nav__item md-nav__item--nested">
+
+
+
+
+
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+
+
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+
+
+  <span class="md-ellipsis">
+    T-Cube
+  </span>
+
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            T-Cube
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+
+
+
+
+
+
+
+    <li class="md-nav__item">
+      <a href="../../tcube/tdc001/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    TDC001
+  </span>
+
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+
+
+
+    <li class="md-nav__item">
+      <a href="../../tcube/tpa101/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    TPA101
+  </span>
+
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+
+
+
+    <li class="md-nav__item">
+      <a href="../../tcube/tpz001/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    TPZ001
+  </span>
+
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+
+
+
+    <li class="md-nav__item">
+      <a href="../../tcube/tsc001/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    TSC001
+  </span>
+
+
+      </a>
+    </li>
+
+
+
+
+          </ul>
+        </nav>
+
+    </li>
+
+
+
+
+          </ul>
+        </nav>
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="md-nav__item md-nav__item--nested">
+
+
+
+
+
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+
+
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+
+
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+
+
+
+
+
+
+
+    <li class="md-nav__item">
+      <a href="../../../tutorial/tutorials/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+
+
+
+    <li class="md-nav__item">
+      <a href="../../../tutorial/examples/sipyco/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    SiPyCo RPC Control
+  </span>
+
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+
+
+
+    <li class="md-nav__item">
+      <a href="../../../tutorial/examples/artiq/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    ARTIQ Control
+  </span>
+
+
+      </a>
+    </li>
+
+
+
+
+          </ul>
+        </nav>
+
+    </li>
+
+
+
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+
+
+
+
+<h1 id="ksc101"><strong>KSC101</strong></h1>
+<p><img alt="An image of a KSC101 K-Cube Solenoid Controller" src="../images/ksc101.jpg" /></p>
+<h2 id="controller-description">Controller Description</h2>
+<p>The <strong>KSC101</strong> is a compact <strong>single-channel</strong> K-Cube controller from Thorlabs designed for <strong>precise control of solenoids</strong>. It enables accurate and reliable actuation of solenoids for applications that require controlled force or switching. The KSC101 provides adjustable current settings for solenoid operation and features USB connectivity for computer control via Thorlabs’ Kinesis Software or <a href="https://github.com/quantumion/thorlabs_cube">QuantumION's Thorlabs Cube Repository</a>.</p>
+<h2 id="controller-use-cases">Controller Use-Cases</h2>
+<ul>
+<li><strong>KSC101</strong> is used in applications requiring precise solenoid actuation, such as:<ol>
+<li><strong>Optical Shutters</strong>: Controlled beam blocking or modulation in laser systems.</li>
+<li><strong>Optomechanical Systems</strong>: Switching optical paths with high accuracy.</li>
+<li><strong>Industrial Automation</strong>: Actuating mechanical locks or switches in precise operations.</li>
+</ol>
+</li>
+</ul>
+<h2 id="peripherals-examples">Peripherals Examples</h2>
+<ul>
+<li><strong>Optical Shutters</strong>
+<img alt="An image of a Thorlabs SH05 Optical Shutter" src="../images/opticalShutter.jpg" /></li>
+<li><strong>Motorized Flip Mounts</strong>
+<img alt="An image of a Thorlabs SOL02 Solenoid Actuator" src="../images/motorizedFlipMounts.jpg" /></li>
+</ul>
+<h2 id="api-reference"><strong>API Reference</strong></h2>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<a id="thorlabs_cube.driver.kcube.ksc.Ksc"></a>
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="thorlabs_cube.driver.tcube.tsc.Tsc" href="../../tcube/tsc001/#thorlabs_cube.driver.tcube.tsc.Tsc">Tsc</a></code></p>
+
+
+        <p>KSC101 K-Cube Solenoid Controller class</p>
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>venv/lib/python3.9/site-packages/thorlabs_cube/driver/kcube/ksc.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">  7</span>
+<span class="normal">  8</span>
+<span class="normal">  9</span>
+<span class="normal"> 10</span>
+<span class="normal"> 11</span>
+<span class="normal"> 12</span>
+<span class="normal"> 13</span>
+<span class="normal"> 14</span>
+<span class="normal"> 15</span>
+<span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Ksc</span><span class="p">(</span><span class="n">Tsc</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    KSC101 K-Cube Solenoid Controller class</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">set_kcubemmi_params</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">js_mode</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">js_max_vel</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">js_accn</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">dir_sense</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">preset_pos1</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">preset_pos2</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">preset_pos3</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">disp_brightness</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">disp_timeout</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">disp_dim_level</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">js_sensitivity</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set the KCube MMI (joystick) parameters.</span>
+
+<span class="sd">        :param js_mode: Joystick mode (1 = velocity control, 2 = jog mode, 3 = go-to-position mode).</span>
+<span class="sd">        :param js_max_vel: Maximum velocity for the joystick.</span>
+<span class="sd">        :param js_accn: Acceleration for the joystick.</span>
+<span class="sd">        :param dir_sense: Direction sense (normal or reversed).</span>
+<span class="sd">        :param preset_pos1: Preset position 1.</span>
+<span class="sd">        :param preset_pos2: Preset position 2.</span>
+<span class="sd">        :param preset_pos3: Preset position 3.</span>
+<span class="sd">        :param disp_brightness: Display brightness.</span>
+<span class="sd">        :param disp_timeout: Display timeout in ms.</span>
+<span class="sd">        :param disp_dim_level: Display dim level.</span>
+<span class="sd">        :param js_sensitivity: Joystick sensitivity.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">payload</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span>
+            <span class="s2">&quot;&lt;HHLLLHHLLLLH&quot;</span><span class="p">,</span>
+            <span class="n">Ksc</span><span class="o">.</span><span class="n">_CHANNEL</span><span class="p">,</span>
+            <span class="n">js_mode</span><span class="p">,</span>
+            <span class="n">js_max_vel</span><span class="p">,</span>
+            <span class="n">js_accn</span><span class="p">,</span>
+            <span class="n">dir_sense</span><span class="p">,</span>
+            <span class="n">preset_pos1</span><span class="p">,</span>
+            <span class="n">preset_pos2</span><span class="p">,</span>
+            <span class="n">preset_pos3</span><span class="p">,</span>
+            <span class="n">disp_brightness</span><span class="p">,</span>
+            <span class="n">disp_timeout</span><span class="p">,</span>
+            <span class="n">disp_dim_level</span><span class="p">,</span>
+            <span class="n">js_sensitivity</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">Message</span><span class="p">(</span><span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_SET_KCUBEMMIPARAMS</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">))</span>
+
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">get_kcubemmi_params</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the KCube MMI (joystick) parameters.</span>
+
+<span class="sd">        :return: A tuple containing the joystick mode, max velocity,</span>
+<span class="sd">        acceleration, direction sense, preset positions, display</span>
+<span class="sd">        settings, and joystick sensitivity.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">payload</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s2">&quot;&lt;H&quot;</span><span class="p">,</span> <span class="n">Ksc</span><span class="o">.</span><span class="n">_CHANNEL</span><span class="p">)</span>
+        <span class="n">get_msg</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send_request</span><span class="p">(</span>
+            <span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_REQ_KCUBEMMIPARAMS</span><span class="p">,</span> <span class="p">[</span><span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_GET_KCUBEMMIPARAMS</span><span class="p">],</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span>
+        <span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">st</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="s2">&quot;&lt;HLLLHHLLLLH&quot;</span><span class="p">,</span> <span class="n">get_msg</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>
+
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">set_kcubetrigio_config</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">trig1_mode</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">trig1_polarity</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">trig2_mode</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">trig2_polarity</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set the KCube trigger I/O configuration parameters.</span>
+
+<span class="sd">        :param trig1_mode: Mode for Trigger 1 (input/output).</span>
+<span class="sd">        :param trig1_polarity: Polarity for Trigger 1 (high/low).</span>
+<span class="sd">        :param trig2_mode: Mode for Trigger 2 (input/output).</span>
+<span class="sd">        :param trig2_polarity: Polarity for Trigger 2 (high/low).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">payload</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span>
+            <span class="s2">&quot;&lt;HBBBB&quot;</span><span class="p">,</span>
+            <span class="n">Ksc</span><span class="o">.</span><span class="n">_CHANNEL</span><span class="p">,</span>
+            <span class="n">trig1_mode</span><span class="p">,</span>
+            <span class="n">trig1_polarity</span><span class="p">,</span>
+            <span class="n">trig2_mode</span><span class="p">,</span>
+            <span class="n">trig2_polarity</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">Message</span><span class="p">(</span><span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_SET_KCUBETRIGIOCONFIG</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">))</span>
+
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">get_kcubetrigio_config</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the KCube trigger I/O configuration parameters.</span>
+
+<span class="sd">        :return: A tuple containing the operating mode, and active state for</span>
+<span class="sd">        both Trigger 1 and Trigger 2. The active states can assume a High or Low</span>
+<span class="sd">        whereas, the operating modes can be both input and output respectively</span>
+
+<span class="sd">        Input State Operating Modes:</span>
+
+<span class="sd">            0x00 The trigger IO is disabled</span>
+
+<span class="sd">            0x01 General purpose logic input (read through status bits using the</span>
+<span class="sd">            MOT_GET_STATUSBITS message).</span>
+
+<span class="sd">            0x02 Input trigger for relative move.</span>
+
+<span class="sd">            0x03 Input trigger for absolute move.</span>
+
+<span class="sd">            0x04 Input trigger for home move.</span>
+
+<span class="sd">        Output State Operating Modes:</span>
+
+<span class="sd">            0x0A General purpose logic output (set using the MOD_SET_DIGOUTPUTS message).</span>
+
+<span class="sd">            0x0B Trigger output active (level) when motor &#39;in motion&#39;. The output trigger goes high (5V)</span>
+<span class="sd">            or low (0V) (as set in the lTrig1Polarity and lTrig2Polarity parameters) when the stage is in</span>
+<span class="sd">            motion.</span>
+
+<span class="sd">            0x0C Trigger output active (level) when motor at &#39;max velocity&#39;.</span>
+
+<span class="sd">            0x0D Trigger output active (pulsed) at pre-defined positions moving forward (set using</span>
+<span class="sd">            StartPosFwd, IntervalFwd, NumPulsesFwd and PulseWidth parameters in the</span>
+<span class="sd">            SetKCubePosTrigParams message). Only one Trigger port at a time can be set to this mode.</span>
+
+<span class="sd">            0x0E Trigger output active (pulsed) at pre-defined positions moving backwards (set using</span>
+<span class="sd">            StartPosRev, IntervalRev, NumPulsesRev and PulseWidth parameters in the</span>
+<span class="sd">            SetKCubePosTrigParams message). Only one Trigger port at a time can be set to this mode.</span>
+
+<span class="sd">            0x0F Trigger output active (pulsed) at pre-defined positions moving forwards and</span>
+<span class="sd">            backward. Only one Trigger port at a time can be set to this mode.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">payload</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s2">&quot;&lt;H&quot;</span><span class="p">,</span> <span class="n">Ksc</span><span class="o">.</span><span class="n">_CHANNEL</span><span class="p">)</span>
+        <span class="n">get_msg</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send_request</span><span class="p">(</span>
+            <span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_REQ_KCUBETRIGIOCONFIG</span><span class="p">,</span>
+            <span class="p">[</span><span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_GET_KCUBETRIGIOCONFIG</span><span class="p">],</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">st</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="s2">&quot;&lt;BBBB&quot;</span><span class="p">,</span> <span class="n">get_msg</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>
+
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">set_kcubepostrig_params</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">start_pos_fwd</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">interval_fwd</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">num_pulses_fwd</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">start_pos_rev</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">interval_rev</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">num_pulses_rev</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">pulse_width</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">num_cycles</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set the KCube post-trigger parameters.</span>
+
+<span class="sd">        :param start_pos_fwd: Stage position to start the forward trigger sequence.</span>
+<span class="sd">        :param interval_fwd: Interval in encoder counts/microsteps for forward trigger pulses.</span>
+<span class="sd">        :param num_pulses_fwd: Number of output pulses during forward move.</span>
+<span class="sd">        :param start_pos_rev: Stage position to start the reverse trigger sequence.</span>
+<span class="sd">        :param interval_rev: Interval in encoder counts/microsteps for reverse trigger pulses.</span>
+<span class="sd">        :param num_pulses_rev: Number of output pulses during reverse move.</span>
+<span class="sd">        :param pulse_width: Trigger output pulse width (from 1 μs to 1,000,000 μs).</span>
+<span class="sd">        :param num_cycles: Number of forward/reverse cycles.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">payload</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span>
+            <span class="s2">&quot;&lt;HLLLLLLLL&quot;</span><span class="p">,</span>
+            <span class="n">Ksc</span><span class="o">.</span><span class="n">_CHANNEL</span><span class="p">,</span>
+            <span class="n">start_pos_fwd</span><span class="p">,</span>
+            <span class="n">interval_fwd</span><span class="p">,</span>
+            <span class="n">num_pulses_fwd</span><span class="p">,</span>
+            <span class="n">start_pos_rev</span><span class="p">,</span>
+            <span class="n">interval_rev</span><span class="p">,</span>
+            <span class="n">num_pulses_rev</span><span class="p">,</span>
+            <span class="n">pulse_width</span><span class="p">,</span>
+            <span class="n">num_cycles</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">Message</span><span class="p">(</span><span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_SET_KCUBEPOSTRIGPARAMS</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">))</span>
+
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">get_kcubepostrig_params</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the KCube post-trigger parameters.</span>
+
+<span class="sd">        :return: A tuple containing (start_pos_fwd, interval_fwd,</span>
+<span class="sd">        num_pulses_fwd, start_pos_rev, interval_rev, num_pulses_rev,</span>
+<span class="sd">        pulse_width, num_cycles).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">payload</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s2">&quot;&lt;H&quot;</span><span class="p">,</span> <span class="n">Ksc</span><span class="o">.</span><span class="n">_CHANNEL</span><span class="p">)</span>
+        <span class="n">get_msg</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send_request</span><span class="p">(</span>
+            <span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_REQ_KCUBEPOSTRIGPARAMS</span><span class="p">,</span>
+            <span class="p">[</span><span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_GET_KCUBEPOSTRIGPARAMS</span><span class="p">],</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">st</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="s2">&quot;&lt;LLLLLLLL&quot;</span><span class="p">,</span> <span class="n">get_msg</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="thorlabs_cube.driver.kcube.ksc.Ksc.get_kcubemmi_params" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_kcubemmi_params</span><span class="p">()</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Get the KCube MMI (joystick) parameters.</p>
+<p>:return: A tuple containing the joystick mode, max velocity,
+acceleration, direction sense, preset positions, display
+settings, and joystick sensitivity.</p>
+
+            <details class="quote">
+              <summary>Source code in <code>venv/lib/python3.9/site-packages/thorlabs_cube/driver/kcube/ksc.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">get_kcubemmi_params</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Get the KCube MMI (joystick) parameters.</span>
+
+<span class="sd">    :return: A tuple containing the joystick mode, max velocity,</span>
+<span class="sd">    acceleration, direction sense, preset positions, display</span>
+<span class="sd">    settings, and joystick sensitivity.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">payload</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s2">&quot;&lt;H&quot;</span><span class="p">,</span> <span class="n">Ksc</span><span class="o">.</span><span class="n">_CHANNEL</span><span class="p">)</span>
+    <span class="n">get_msg</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send_request</span><span class="p">(</span>
+        <span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_REQ_KCUBEMMIPARAMS</span><span class="p">,</span> <span class="p">[</span><span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_GET_KCUBEMMIPARAMS</span><span class="p">],</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">st</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="s2">&quot;&lt;HLLLHHLLLLH&quot;</span><span class="p">,</span> <span class="n">get_msg</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="thorlabs_cube.driver.kcube.ksc.Ksc.get_kcubepostrig_params" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_kcubepostrig_params</span><span class="p">()</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Get the KCube post-trigger parameters.</p>
+<p>:return: A tuple containing (start_pos_fwd, interval_fwd,
+num_pulses_fwd, start_pos_rev, interval_rev, num_pulses_rev,
+pulse_width, num_cycles).</p>
+
+            <details class="quote">
+              <summary>Source code in <code>venv/lib/python3.9/site-packages/thorlabs_cube/driver/kcube/ksc.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">get_kcubepostrig_params</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Get the KCube post-trigger parameters.</span>
+
+<span class="sd">    :return: A tuple containing (start_pos_fwd, interval_fwd,</span>
+<span class="sd">    num_pulses_fwd, start_pos_rev, interval_rev, num_pulses_rev,</span>
+<span class="sd">    pulse_width, num_cycles).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">payload</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s2">&quot;&lt;H&quot;</span><span class="p">,</span> <span class="n">Ksc</span><span class="o">.</span><span class="n">_CHANNEL</span><span class="p">)</span>
+    <span class="n">get_msg</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send_request</span><span class="p">(</span>
+        <span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_REQ_KCUBEPOSTRIGPARAMS</span><span class="p">,</span>
+        <span class="p">[</span><span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_GET_KCUBEPOSTRIGPARAMS</span><span class="p">],</span>
+        <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">st</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="s2">&quot;&lt;LLLLLLLL&quot;</span><span class="p">,</span> <span class="n">get_msg</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="thorlabs_cube.driver.kcube.ksc.Ksc.get_kcubetrigio_config" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_kcubetrigio_config</span><span class="p">()</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Get the KCube trigger I/O configuration parameters.</p>
+<p>:return: A tuple containing the operating mode, and active state for
+both Trigger 1 and Trigger 2. The active states can assume a High or Low
+whereas, the operating modes can be both input and output respectively</p>
+<p>Input State Operating Modes:</p>
+<pre><code>0x00 The trigger IO is disabled
+
+0x01 General purpose logic input (read through status bits using the
+MOT_GET_STATUSBITS message).
+
+0x02 Input trigger for relative move.
+
+0x03 Input trigger for absolute move.
+
+0x04 Input trigger for home move.
+</code></pre>
+<p>Output State Operating Modes:</p>
+<pre><code>0x0A General purpose logic output (set using the MOD_SET_DIGOUTPUTS message).
+
+0x0B Trigger output active (level) when motor 'in motion'. The output trigger goes high (5V)
+or low (0V) (as set in the lTrig1Polarity and lTrig2Polarity parameters) when the stage is in
+motion.
+
+0x0C Trigger output active (level) when motor at 'max velocity'.
+
+0x0D Trigger output active (pulsed) at pre-defined positions moving forward (set using
+StartPosFwd, IntervalFwd, NumPulsesFwd and PulseWidth parameters in the
+SetKCubePosTrigParams message). Only one Trigger port at a time can be set to this mode.
+
+0x0E Trigger output active (pulsed) at pre-defined positions moving backwards (set using
+StartPosRev, IntervalRev, NumPulsesRev and PulseWidth parameters in the
+SetKCubePosTrigParams message). Only one Trigger port at a time can be set to this mode.
+
+0x0F Trigger output active (pulsed) at pre-defined positions moving forwards and
+backward. Only one Trigger port at a time can be set to this mode.
+</code></pre>
+
+            <details class="quote">
+              <summary>Source code in <code>venv/lib/python3.9/site-packages/thorlabs_cube/driver/kcube/ksc.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">get_kcubetrigio_config</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Get the KCube trigger I/O configuration parameters.</span>
+
+<span class="sd">    :return: A tuple containing the operating mode, and active state for</span>
+<span class="sd">    both Trigger 1 and Trigger 2. The active states can assume a High or Low</span>
+<span class="sd">    whereas, the operating modes can be both input and output respectively</span>
+
+<span class="sd">    Input State Operating Modes:</span>
+
+<span class="sd">        0x00 The trigger IO is disabled</span>
+
+<span class="sd">        0x01 General purpose logic input (read through status bits using the</span>
+<span class="sd">        MOT_GET_STATUSBITS message).</span>
+
+<span class="sd">        0x02 Input trigger for relative move.</span>
+
+<span class="sd">        0x03 Input trigger for absolute move.</span>
+
+<span class="sd">        0x04 Input trigger for home move.</span>
+
+<span class="sd">    Output State Operating Modes:</span>
+
+<span class="sd">        0x0A General purpose logic output (set using the MOD_SET_DIGOUTPUTS message).</span>
+
+<span class="sd">        0x0B Trigger output active (level) when motor &#39;in motion&#39;. The output trigger goes high (5V)</span>
+<span class="sd">        or low (0V) (as set in the lTrig1Polarity and lTrig2Polarity parameters) when the stage is in</span>
+<span class="sd">        motion.</span>
+
+<span class="sd">        0x0C Trigger output active (level) when motor at &#39;max velocity&#39;.</span>
+
+<span class="sd">        0x0D Trigger output active (pulsed) at pre-defined positions moving forward (set using</span>
+<span class="sd">        StartPosFwd, IntervalFwd, NumPulsesFwd and PulseWidth parameters in the</span>
+<span class="sd">        SetKCubePosTrigParams message). Only one Trigger port at a time can be set to this mode.</span>
+
+<span class="sd">        0x0E Trigger output active (pulsed) at pre-defined positions moving backwards (set using</span>
+<span class="sd">        StartPosRev, IntervalRev, NumPulsesRev and PulseWidth parameters in the</span>
+<span class="sd">        SetKCubePosTrigParams message). Only one Trigger port at a time can be set to this mode.</span>
+
+<span class="sd">        0x0F Trigger output active (pulsed) at pre-defined positions moving forwards and</span>
+<span class="sd">        backward. Only one Trigger port at a time can be set to this mode.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">payload</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s2">&quot;&lt;H&quot;</span><span class="p">,</span> <span class="n">Ksc</span><span class="o">.</span><span class="n">_CHANNEL</span><span class="p">)</span>
+    <span class="n">get_msg</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send_request</span><span class="p">(</span>
+        <span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_REQ_KCUBETRIGIOCONFIG</span><span class="p">,</span>
+        <span class="p">[</span><span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_GET_KCUBETRIGIOCONFIG</span><span class="p">],</span>
+        <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">st</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="s2">&quot;&lt;BBBB&quot;</span><span class="p">,</span> <span class="n">get_msg</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="thorlabs_cube.driver.kcube.ksc.Ksc.set_kcubemmi_params" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_kcubemmi_params</span><span class="p">(</span><span class="n">js_mode</span><span class="p">,</span> <span class="n">js_max_vel</span><span class="p">,</span> <span class="n">js_accn</span><span class="p">,</span> <span class="n">dir_sense</span><span class="p">,</span> <span class="n">preset_pos1</span><span class="p">,</span> <span class="n">preset_pos2</span><span class="p">,</span> <span class="n">preset_pos3</span><span class="p">,</span> <span class="n">disp_brightness</span><span class="p">,</span> <span class="n">disp_timeout</span><span class="p">,</span> <span class="n">disp_dim_level</span><span class="p">,</span> <span class="n">js_sensitivity</span><span class="p">)</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Set the KCube MMI (joystick) parameters.</p>
+<p>:param js_mode: Joystick mode (1 = velocity control, 2 = jog mode, 3 = go-to-position mode).
+:param js_max_vel: Maximum velocity for the joystick.
+:param js_accn: Acceleration for the joystick.
+:param dir_sense: Direction sense (normal or reversed).
+:param preset_pos1: Preset position 1.
+:param preset_pos2: Preset position 2.
+:param preset_pos3: Preset position 3.
+:param disp_brightness: Display brightness.
+:param disp_timeout: Display timeout in ms.
+:param disp_dim_level: Display dim level.
+:param js_sensitivity: Joystick sensitivity.</p>
+
+            <details class="quote">
+              <summary>Source code in <code>venv/lib/python3.9/site-packages/thorlabs_cube/driver/kcube/ksc.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">set_kcubemmi_params</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span>
+    <span class="n">js_mode</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">js_max_vel</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">js_accn</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">dir_sense</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">preset_pos1</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">preset_pos2</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">preset_pos3</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">disp_brightness</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">disp_timeout</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">disp_dim_level</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">js_sensitivity</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Set the KCube MMI (joystick) parameters.</span>
+
+<span class="sd">    :param js_mode: Joystick mode (1 = velocity control, 2 = jog mode, 3 = go-to-position mode).</span>
+<span class="sd">    :param js_max_vel: Maximum velocity for the joystick.</span>
+<span class="sd">    :param js_accn: Acceleration for the joystick.</span>
+<span class="sd">    :param dir_sense: Direction sense (normal or reversed).</span>
+<span class="sd">    :param preset_pos1: Preset position 1.</span>
+<span class="sd">    :param preset_pos2: Preset position 2.</span>
+<span class="sd">    :param preset_pos3: Preset position 3.</span>
+<span class="sd">    :param disp_brightness: Display brightness.</span>
+<span class="sd">    :param disp_timeout: Display timeout in ms.</span>
+<span class="sd">    :param disp_dim_level: Display dim level.</span>
+<span class="sd">    :param js_sensitivity: Joystick sensitivity.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">payload</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span>
+        <span class="s2">&quot;&lt;HHLLLHHLLLLH&quot;</span><span class="p">,</span>
+        <span class="n">Ksc</span><span class="o">.</span><span class="n">_CHANNEL</span><span class="p">,</span>
+        <span class="n">js_mode</span><span class="p">,</span>
+        <span class="n">js_max_vel</span><span class="p">,</span>
+        <span class="n">js_accn</span><span class="p">,</span>
+        <span class="n">dir_sense</span><span class="p">,</span>
+        <span class="n">preset_pos1</span><span class="p">,</span>
+        <span class="n">preset_pos2</span><span class="p">,</span>
+        <span class="n">preset_pos3</span><span class="p">,</span>
+        <span class="n">disp_brightness</span><span class="p">,</span>
+        <span class="n">disp_timeout</span><span class="p">,</span>
+        <span class="n">disp_dim_level</span><span class="p">,</span>
+        <span class="n">js_sensitivity</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">Message</span><span class="p">(</span><span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_SET_KCUBEMMIPARAMS</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">))</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="thorlabs_cube.driver.kcube.ksc.Ksc.set_kcubepostrig_params" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_kcubepostrig_params</span><span class="p">(</span><span class="n">start_pos_fwd</span><span class="p">,</span> <span class="n">interval_fwd</span><span class="p">,</span> <span class="n">num_pulses_fwd</span><span class="p">,</span> <span class="n">start_pos_rev</span><span class="p">,</span> <span class="n">interval_rev</span><span class="p">,</span> <span class="n">num_pulses_rev</span><span class="p">,</span> <span class="n">pulse_width</span><span class="p">,</span> <span class="n">num_cycles</span><span class="p">)</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Set the KCube post-trigger parameters.</p>
+<p>:param start_pos_fwd: Stage position to start the forward trigger sequence.
+:param interval_fwd: Interval in encoder counts/microsteps for forward trigger pulses.
+:param num_pulses_fwd: Number of output pulses during forward move.
+:param start_pos_rev: Stage position to start the reverse trigger sequence.
+:param interval_rev: Interval in encoder counts/microsteps for reverse trigger pulses.
+:param num_pulses_rev: Number of output pulses during reverse move.
+:param pulse_width: Trigger output pulse width (from 1 μs to 1,000,000 μs).
+:param num_cycles: Number of forward/reverse cycles.</p>
+
+            <details class="quote">
+              <summary>Source code in <code>venv/lib/python3.9/site-packages/thorlabs_cube/driver/kcube/ksc.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">set_kcubepostrig_params</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span>
+    <span class="n">start_pos_fwd</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">interval_fwd</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">num_pulses_fwd</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">start_pos_rev</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">interval_rev</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">num_pulses_rev</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">pulse_width</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">num_cycles</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Set the KCube post-trigger parameters.</span>
+
+<span class="sd">    :param start_pos_fwd: Stage position to start the forward trigger sequence.</span>
+<span class="sd">    :param interval_fwd: Interval in encoder counts/microsteps for forward trigger pulses.</span>
+<span class="sd">    :param num_pulses_fwd: Number of output pulses during forward move.</span>
+<span class="sd">    :param start_pos_rev: Stage position to start the reverse trigger sequence.</span>
+<span class="sd">    :param interval_rev: Interval in encoder counts/microsteps for reverse trigger pulses.</span>
+<span class="sd">    :param num_pulses_rev: Number of output pulses during reverse move.</span>
+<span class="sd">    :param pulse_width: Trigger output pulse width (from 1 μs to 1,000,000 μs).</span>
+<span class="sd">    :param num_cycles: Number of forward/reverse cycles.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">payload</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span>
+        <span class="s2">&quot;&lt;HLLLLLLLL&quot;</span><span class="p">,</span>
+        <span class="n">Ksc</span><span class="o">.</span><span class="n">_CHANNEL</span><span class="p">,</span>
+        <span class="n">start_pos_fwd</span><span class="p">,</span>
+        <span class="n">interval_fwd</span><span class="p">,</span>
+        <span class="n">num_pulses_fwd</span><span class="p">,</span>
+        <span class="n">start_pos_rev</span><span class="p">,</span>
+        <span class="n">interval_rev</span><span class="p">,</span>
+        <span class="n">num_pulses_rev</span><span class="p">,</span>
+        <span class="n">pulse_width</span><span class="p">,</span>
+        <span class="n">num_cycles</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">Message</span><span class="p">(</span><span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_SET_KCUBEPOSTRIGPARAMS</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">))</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="thorlabs_cube.driver.kcube.ksc.Ksc.set_kcubetrigio_config" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_kcubetrigio_config</span><span class="p">(</span><span class="n">trig1_mode</span><span class="p">,</span> <span class="n">trig1_polarity</span><span class="p">,</span> <span class="n">trig2_mode</span><span class="p">,</span> <span class="n">trig2_polarity</span><span class="p">)</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Set the KCube trigger I/O configuration parameters.</p>
+<p>:param trig1_mode: Mode for Trigger 1 (input/output).
+:param trig1_polarity: Polarity for Trigger 1 (high/low).
+:param trig2_mode: Mode for Trigger 2 (input/output).
+:param trig2_polarity: Polarity for Trigger 2 (high/low).</p>
+
+            <details class="quote">
+              <summary>Source code in <code>venv/lib/python3.9/site-packages/thorlabs_cube/driver/kcube/ksc.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span>
+<span class="normal">90</span>
+<span class="normal">91</span>
+<span class="normal">92</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">set_kcubetrigio_config</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span> <span class="n">trig1_mode</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">trig1_polarity</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">trig2_mode</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">trig2_polarity</span><span class="p">:</span> <span class="nb">int</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Set the KCube trigger I/O configuration parameters.</span>
+
+<span class="sd">    :param trig1_mode: Mode for Trigger 1 (input/output).</span>
+<span class="sd">    :param trig1_polarity: Polarity for Trigger 1 (high/low).</span>
+<span class="sd">    :param trig2_mode: Mode for Trigger 2 (input/output).</span>
+<span class="sd">    :param trig2_polarity: Polarity for Trigger 2 (high/low).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">payload</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span>
+        <span class="s2">&quot;&lt;HBBBB&quot;</span><span class="p">,</span>
+        <span class="n">Ksc</span><span class="o">.</span><span class="n">_CHANNEL</span><span class="p">,</span>
+        <span class="n">trig1_mode</span><span class="p">,</span>
+        <span class="n">trig1_polarity</span><span class="p">,</span>
+        <span class="n">trig2_mode</span><span class="p">,</span>
+        <span class="n">trig2_polarity</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">Message</span><span class="p">(</span><span class="n">MGMSG</span><span class="o">.</span><span class="n">MOT_SET_KCUBETRIGIOCONFIG</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">))</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </article>
+            </div>
+
+
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+
+      </main>
+
+        <footer class="md-footer">
+
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+
+
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+
+</div>
+
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+
+
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.expand", "content.code.copy", "toc.integrate", "content.tabs.link"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+
+
+      <script src="../../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+
+
+  </body>
+</html>
